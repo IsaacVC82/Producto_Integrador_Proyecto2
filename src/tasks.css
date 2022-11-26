@@ -1,0 +1,30 @@
+body{
+    color:whitesmoke;
+    background-color:black;
+    text-align: center;
+    font-size: large;
+}
+
+.position{
+    height:35px;
+    width: 150px;
+    font-size: small;
+    position: center;
+    border-radius: 5px;
+    background-color: steelblue;
+    color: white;
+}
+p{
+    color:whitesmoke;
+}
+.card-container{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.text-container{
+    color: whitesmoke;
+}
+.tasks{
+    color:white;
+    font-weight: bolder;
+}

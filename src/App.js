@@ -1,25 +1,102 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./tasks.css";
+import { Button } from "reactstrap";
 
+const clickActividades = ()=>{
+  alert("Las actividades del curso fueron desarrollar un proyecto en SCRUM y una ligera introducción a react")
+}
+const clickSistema = () => {
+  alert("El sistema SCRUM es una metodología ágil para la planeación de proyectos el  cual facilita el trabajo en equipo y reduce los costos de producción")
+}
+const clickModificaciones = () =>{
+  alert("Trate de seguir con el plan origianl desde un principio, las modificaciones fueron minimas realmente; solo algunos ajustes a los Sprints y al backlog en general.")
+}
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div >
+      <header>
+          <br></br><br></br>
+        <h1>Producto integrador</h1>
+        <p>Al hacer click en cada uno de los botones vamos a encontrar un breve resumen de lo que vimos en varios aspectos del semestre.</p>
+        <Button className="position" onClick ={()=>clickActividades()}>Actividades</Button>
+        <Button className="position" onClick ={()=>clickSistema()}>Sistema</Button>
+        <Button className="position" onClick ={()=>clickModificaciones()}>Modificaciones</Button>
+        <p>A continuación muestro los sprints finales:</p>
+        <><div className='card-container'>
+            <h1>Sprint 1</h1>
+            <div className="text-container">
+                <p className="task">Reunión General 1</p>
+                <p>- Preparar el material visual para la reunión con el cliente</p>
+                <p>- Reunión con el equipo antes de la junta con el cliente</p>
+                <p>- Reunión con el cliente</p>
+                <p>Nota: En la reunión con el cliente se deberan acordar los criterios de  aceptación del proyecto</p>
+                <p className="task">Reunión Diseño 1</p>
+                <p>- Reunión con el diseñador para una lluvia de ideas</p>
+                <p>- Diseño de una nueva paleta de colores congruente con la imagen de la empresa </p>
+                <p>- Bosquejar varias versiones de la página principal</p>
+                <p>- Bosquejar todo el mapa del sitio</p>
+                <p className="task">Reunión Coders 1</p>
+                <p>- Reunión de coders para la planeación de la base de datos </p>
+                <p>- Modelado de la Base de datos</p>
+                <p>- Testear el modelado de la base de datos</p>
+                <p className="task">Diseño borrador</p>
+                <p>- Diseñar la tipografía y los headers para el catalogo</p>
+                <p>- Diseñar la pagina principal y el menú de opciones</p>
+                <p>- Diseñar el carrito de compras</p>
+                <p>- Diseñar la vista de las páginas secundarias</p>
+
+            <div className="card-container">
+                <h1>Sprint 2</h1>
+                <div className="text-container">
+                    <p className="task">Desarrollo database</p>
+                    <p>- Desarrollar el modelo de la base de datos</p>
+                    <p>- Hacer pruebas de eficiencia de la base de datos </p>
+                    <p className="task">Diseño Catalogo web</p>
+                    <p>- Programar la página principal</p>
+                    <p>- Programar el carrito de compras</p>
+                    <p>- Programar las paginas secundarias o de los productos</p>
+                    <p>Nota: En el diseño del catalogo se debera tomar muy en cuenta la   imagen de la empresa</p>
+                    <p className="task">Test 1</p>
+                    <p>- Testear la seguridad del catalogo web</p>
+                    <p>- Testear la accesibilidad del catalogo web</p>
+                    <p>Nota: La accesibilidad y la UX serán nuestro principal objetivo en esta parte del sprint</p>
+                </div>
+                </div>
+
+                <div className="card-container">
+                    <h1>Sprint 3</h1>
+                    <div className="text-container">
+                        <p className="task">Reunión General 2</p>
+                        <p>- Preparar los avances a mostrar </p>
+                        <p>- Reunión con el cliente para establecer ajustes</p>
+                        <p className="task">Ajustes diseño</p>
+                        <p>- Realizar los ajustes acordados con el cliente durante la segunda junta general</p>
+                        <p>- Mandar los cambios al cliente para su aprobación</p>
+                        <p className="task">Test final</p>
+                        <p>- Realizar test de seguridad del catalogo</p>
+                        <p>- Realizar test de accesibilidad del catalogo</p>
+                        <p>- Realizar test de UX del catalogo</p>
+                        <p className="task">Reunión final</p>
+                        <p>- Reunión con el cliente para el lanzamiento del catalogo</p>
+                        <p>Nota: Esta será la reunión clave donde sabremos si alcanzamos la meta</p>
+
+                    </div>
+                </div>
+
+
+                
+            </div>
+            </div></>
+        
+        
+        
+
+        
       </header>
     </div>
   );
 }
+
 
 export default App;
